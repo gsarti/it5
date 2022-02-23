@@ -1,6 +1,6 @@
 # IT5 🇮🇹
 
-This repository groups links and materials for the paper "IT5: Large-scale Text-to-text Pretraining for Italian Language Understanding and Generation" by Gabriele Sarti & Malvina Nissim (2022). If you use any of the following, you are kindly requested to cite the paper:
+This repository groups links and materials for the paper ["IT5: Large-scale Text-to-text Pretraining for Italian Language Understanding and Generation"](https://arxiv.org) by [Gabriele Sarti](https://gsarti.com) & [Malvina Nissim](https://malvinanissim.github.io/) (2022). If you use any of the following, you are kindly requested to cite the paper:
 
 ```bibtex
 @article{sarti-nissim-2022-it5,
@@ -20,11 +20,11 @@ This repository groups links and materials for the paper "IT5: Large-scale Text-
 
 - The following pre-trained IT5 models are made available vie the Huggingface Models Hub:
 
-    - [IT5 Small](https://huggingface.co/datasets/gsarti/it5-small), encoder-decoder with 6+6 layer and 60M parameters.
+    - [IT5 Small](https://huggingface.co/gsarti/it5-small), encoder-decoder with 6+6 layer and 60M parameters.
 
-    - [IT5 Base](https://huggingface.co/datasets/gsarti/it5-small), encoder-decoder with 12+12 layer and 220M parameters.
+    - [IT5 Base](https://huggingface.co/gsarti/it5-base), encoder-decoder with 12+12 layer and 220M parameters.
 
-    - [IT5 Large](https://huggingface.co/datasets/gsarti/it5-small), encoder-decoder with 24+24 layer and 738M parameters.
+    - [IT5 Large](https://huggingface.co/gsarti/it5-large), encoder-decoder with 24+24 layer and 738M parameters.
 
 ## Experiments Materials
 
