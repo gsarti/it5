@@ -1,0 +1,9 @@
+transformers[sentencepiece]
+datasets
+bert-score
+rouge-score
+tqdm
+torch
+nltk
+numpy
+pandas
