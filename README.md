@@ -46,10 +46,8 @@ We release all the 45 fine-tuned model checkpoints (3 IT5 models and 2 mT5 model
 from transformers import pipelines
 
 # e.g. to load IT5 Small trained on formal-to-informal style 
-# transfer, use `it5/it5-small-formal-to-informal` as MODEL ID.
-from transformers import pipeline
-
-f2i = pipeline("text2text-generation", model='<MODEL ID>')
+# transfer, use `it5/it5-small-formal-to-informal`
+f2i = pipeline("text2text-generation", model='it5/it5-small-formal-to-informal')
 f2i("Vi ringrazio infinitamente per vostra disponibilità")
 >>> [{"generated_text": "e grazie per la vostra disponibilità!"}]
 ```
