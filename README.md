@@ -17,6 +17,10 @@ This repository groups links and materials for the paper ["IT5: Large-scale Text
 }
 ```
 
+## Web Demo
+
+Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try out the Web Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/it5/it5-demo)
+
 ## Pre-training Materials
 
 - The repository [gsarti/t5-flax-gcp](https://github.com/gsarti/t5-flax-gcp) provides the script and a detailed explanation of the pre-training process using Huggingface and Flax on a TPU v3-8 VM via Google Cloud Platform.
