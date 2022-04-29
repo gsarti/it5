@@ -4,7 +4,7 @@
 
 > **Abstract:** The T5 model and its unified text-to-text paradigm contributed in advancing the state-of-the-art for many natural language processing tasks. While some multilingual variants of the T5 model have recently been introduced, their performances were found to provide suboptimal performances for languages other than English if compared to ad-hoc monolingual variants. Motivated by these findings we introduce IT5, the first family of encoder-decoder transformer models pretrained specifically on the Italian language. We perform a thorough cleaning of a web-crawled Italian corpus including more than 40 billion words, and use it to pretrain three IT5 models of different sizes. We then evaluate the performance of the IT5 models and their multilingual counterparts on a broad range on natural language understanding and generation benchmarks for Italian. We find the monolingual IT5 models to provide the best scale-to-performance ratio across tested models, consistently outperforming their multilingual counterparts and setting a new state-of-the-art for most Italian conditional language generation tasks.
 
-This repository groups links and materials for the paper ["IT5: Large-scale Text-to-text Pretraining for Italian Language Understanding and Generation"](https://arxiv.org/abs/2203.03759). If you use any of the following contents for your work, you are kindly requested to cite our paper:
+This repository groups links and materials for the paper ["IT5: Large-scale Text-to-text Pretraining for Italian Language Understanding and Generation"](https://arxiv.org/abs/2203.03759). If you use any of the following contents for your work, we kindly ask you to cite our paper:
 
 ```bibtex
 @article{sarti-nissim-2022-it5,
@@ -16,6 +16,11 @@ This repository groups links and materials for the paper ["IT5: Large-scale Text
 	month={mar}
 }
 ```
+
+## News
+
+**April 2022**: New efficient checkpoints for the IT5 Small model, using the 32EL architecture from the [Scale Efficiently](https://arxiv.org/abs/2109.10686) paper by Google. Now even with a cased vocabulary! Available now in the demo. Thanks to [Stefan Schweter](https://github.com/stefan-it) for his contribution!
+
 
 ## Web Demo
 
