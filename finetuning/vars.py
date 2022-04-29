@@ -51,6 +51,7 @@ models = [
     "gsarti/it5-small",
     "gsarti/it5-base",
     "gsarti/it5-large",
+    "it5/it5-efficient-small-el32"
 ]
 
 configs = [
@@ -68,7 +69,7 @@ configs = [
 def get_bsz(model):
     if model.startswith("gsarti/it5-small"):
         return 16
-    elif model.startswith("gsarti/it5-base"):
+    elif model.startswith("gsarti/it5-base") or model.startswith("it5/it5-efficient-small"):
         return 8
     elif "mt5-base" in model or model.startswith("gsarti/it5-large"):
         return 4
@@ -78,7 +79,7 @@ def get_bsz(model):
 def get_time(model):
     if model.startswith("gsarti/it5-small"):
         return 10
-    elif model.startswith("gsarti/it5-base"):
+    elif model.startswith("gsarti/it5-base") or model.startswith("it5/it5-efficient-small"):
         return 15
     elif "mt5-base" in model or model.startswith("gsarti/it5-large"):
         return 24
@@ -88,7 +89,7 @@ def get_time(model):
 def get_lr(model):
     if model.startswith("gsarti/it5-small"):
         return 8e-4
-    elif model.startswith("gsarti/it5-base") :
+    elif model.startswith("gsarti/it5-base") or model.startswith("it5/it5-efficient-small"):
         return 3e-4
     elif "mt5-base" in model or model.startswith("gsarti/it5-large"):
         return 5e-5
