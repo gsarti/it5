@@ -40,6 +40,8 @@ Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [
 
     - [IT5 Large](https://huggingface.co/gsarti/it5-large), encoder-decoder with 24+24 layer and 738M parameters.
 
+    - **New!** [IT5 Efficient Small](https://huggingface.co/it5/it5-efficient-small-el32), encoder-decoder with 32+6 layer and 143M parameters, using a **cased vocabulary**.
+
 ## Experiments Materials
 
 It is not possible for us to freely release the fine-tuning data due to access restrictions imposed by some of the original dataset creators. Please reach out at [gabriele.sarti996@gmail.com](mailto:gabriele.sarti996@gmail.com) showing proof of having received access to the XFORMAL dataset ([procedure here](https://github.com/Elbria/xformal-FoST)) and we will be happy to provide with the preprocessed data.
@@ -54,7 +56,7 @@ This repository contains the following materials to reproduce fine-tuning experi
 
 - The notebook [compute_scores.ipynb](compute_scores.ipynb) contains the code used to evaluate the performances of all the models on all the datasets. The configuration [bertscore_baseline_ita.tsv](bertscore_baseline_ita.tsv) is used in the notebook to compute the renormalized BERTScore values.
 
-We release all the **45 fine-tuned model checkpoints** (3 IT5 models and 2 mT5 models on a total of 9 tasks) in the [it5 repository](https://huggingface.co/it5) on Huggingface. All models include Tensorboard logs for the fine-tuning procedure and are available for usage with the Huggingface Transformers library using Tensorflow, Pytorch and JAX. They can be used directly with `pipelines` as:
+We release all the **54 fine-tuned model checkpoints** (3 IT5 models + 1 Efficient IT5 model and 2 mT5 models on a total of 9 tasks) in the [it5 repository](https://huggingface.co/it5) on Huggingface. All models include Tensorboard logs for the fine-tuning procedure and are available for usage with the Huggingface Transformers library using Tensorflow, Pytorch and JAX. They can be used directly with `pipelines` as:
 
 ```python
 from transformers import pipelines
