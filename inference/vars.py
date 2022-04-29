@@ -114,13 +114,14 @@ models = [
     "it5/it5-small",
     "it5/it5-base",
     "it5/it5-large",
+    "it5/it5-efficient-small-el32"
 ]
 
 
 def get_bsz(model):
     if model.startswith("it5/it5-small"):
         return 128
-    elif model.startswith("it5/it5-base") or "mt5-small" in model:
+    elif model.startswith("it5/it5-base") or "mt5-small" in model or model.startswith("it5/it5-efficient-small-el32"):
         return 64
     elif "mt5-base" in model or model.startswith("it5/it5-large"):
         return 32
