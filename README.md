@@ -24,7 +24,7 @@ This repository groups links and materials for the paper ["IT5: Large-scale Text
 
 ## Web Demo
 
-Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try out the Web Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/it5/it5-demo)
+Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try out the Web Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/gsarti/it5-demo)
 
 ## Pre-training Materials
 
@@ -32,7 +32,7 @@ Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [
 
 - The Cleaned Italian mC4 Corpus used for pre-training the IT5 models is made available on the Huggingface Datasets Hub under the identifier [gsarti/clean_mc4_it](https://huggingface.co/datasets/gsarti/clean_mc4_it).
 
-- The following pre-trained IT5 models are made available vie the Huggingface Models Hub:
+- The following pre-trained IT5 models are made available via the Huggingface Models Hub:
 
     - [IT5 Small](https://huggingface.co/gsarti/it5-small), encoder-decoder with 6+6 layer and 60M parameters.
 
@@ -40,7 +40,7 @@ Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [
 
     - [IT5 Large](https://huggingface.co/gsarti/it5-large), encoder-decoder with 24+24 layer and 738M parameters.
 
-    - **New!** [IT5 Efficient Small](https://huggingface.co/it5/it5-efficient-small-el32), encoder-decoder with 32+6 layer and 143M parameters, using a **cased vocabulary**.
+    - **New!** [IT5 Efficient Small](https://huggingface.co/gsarti/it5-efficient-small-el32), encoder-decoder with 32+6 layer and 143M parameters, using a **cased vocabulary**.
 
 ## Experiments Materials
 
@@ -62,8 +62,8 @@ We release all the **54 fine-tuned model checkpoints** (3 IT5 models + 1 Efficie
 from transformers import pipelines
 
 # e.g. to load IT5 Small trained on formal-to-informal style 
-# transfer, use `it5/it5-small-formal-to-informal`
-f2i = pipeline("text2text-generation", model='it5/it5-small-formal-to-informal')
+# transfer, use `gsarti/it5-small-formal-to-informal`
+f2i = pipeline("text2text-generation", model='gsarti/it5-small-formal-to-informal')
 f2i("Vi ringrazio infinitamente per vostra disponibilità")
 >>> [{"generated_text": "e grazie per la vostra disponibilità!"}]
 ```
@@ -74,7 +74,7 @@ or loaded separately as:
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 # e.g. to load IT5 Small trained on headline generation,
-# use `it5/it5-small-headline-generation` as MODEL ID.
+# use `gsarti/it5-small-headline-generation` as MODEL ID.
 tokenizer = AutoTokenizer.from_pretrained("<MODEL ID>")
 
 model = AutoModelForSeq2SeqLM.from_pretrained("<MODEL ID>")
